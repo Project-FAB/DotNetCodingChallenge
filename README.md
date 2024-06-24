@@ -25,7 +25,11 @@ Full Stack .NET Coding Challenge
 
 ## Run
 
-1. Clone this repo
+1. Clone this repo `https://github.com/Project-FAB/DotNetCodingChallenge.git`
 2. Ensure you already installed .Net Framework 8
 3. Go to PM
 4. run Update-Database to run the migration
+
+## Demo
+
+`https://www.dropbox.com/scl/fi/qbqcwffstt66wwbj1k8yh/2024-06-25-00-22-52.mkv?rlkey=20g1s9trljtur33dwfi6xw86k&st=7siqb79c&dl=0`
