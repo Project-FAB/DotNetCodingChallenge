@@ -1,0 +1,30 @@
+﻿@model IEnumerable<ContactMgr.Models.Note>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create Contact</a>
+</p>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 25vh;">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate w-75">@Html.DisplayFor(modelItem => item.Title)</h5>
+                        <p class="card-text card-description short">@Html.DisplayFor(modelItem => item.Description)</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-primary">Edit</a>
+                        <a href="@Url.Action("Details", new { id = item.Id })" class="btn btn-info">View</a>
+                        <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger">Delete Contact</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
